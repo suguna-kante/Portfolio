@@ -751,7 +751,7 @@
         &gt; <span id="typed-text"></span><span class="typed-cursor">|</span>
       </p>
       <p class="hero-desc">
-        Full-stack developer with hands-on experience building and deploying web applications using React, Django, and REST APIs. Passionate about crafting scalable, user-centric solutions.
+        Full-stack developer with hands-on experience building and deploying web applications using React, Backend, and REST APIs. Passionate about crafting scalable, user-centric solutions.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
@@ -799,7 +799,7 @@
         <strong>I'm</strong>  a Computer Science Engineering student with a strong interest in Full Stack Web Development, UI/UX Design, and scalable application development.
       </p>
       <p>
-        Experienced in <strong>React, Django, REST APIs</strong>, and responsive web design and brings both technical depth and design sensibility to every project I build. My approach combines clean architecture with intuitive user experiences.
+        Experienced in <strong>React, Backend, REST APIs</strong>, and responsive web design and brings both technical depth and design sensibility to every project I build. My approach combines clean architecture with intuitive user experiences.
       </p>
       <p>
         I solved <strong>500+ coding problems</strong> on CodeChef and is actively expanding my backend and cloud infrastructure skills — always pushing toward the next challenge.
@@ -1144,7 +1144,7 @@
     <div class="service-card glass reveal">
       <div class="service-icon"><i class="fas fa-plug"></i></div>
       <div class="service-title">Backend API Development</div>
-      <div class="service-desc">Robust RESTful APIs with Django and authentication, ready for any frontend.</div>
+      <div class="service-desc">Robust RESTful APIs with Backend and authentication, ready for any frontend.</div>
     </div>
     <div class="service-card glass reveal reveal-delay-1">
       <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
@@ -1305,12 +1305,13 @@
   document.querySelectorAll('.skill-category-card').forEach(el => skillObserver.observe(el));
 
   /* ---- TYPING ANIMATION ---- */
-  const phrases = ['Full Stack Developer', 'Django Developer', 'React Developer', 'Problem Solver', 'CS Engineering Student'];
+  const phrases = ['Full Stack Developer', 'Backend Developer', 'React Developer', 'Problem Solver', 'CS Engineering Student'];
   let pi = 0, ci = 0, deleting = false;
   const typedEl = document.getElementById('typed-text');
   function type() {
     const phrase = phrases[pi];
     if(!deleting) {
+      
       typedEl.textContent = phrase.substring(0, ci+1);
       ci++;
       if(ci === phrase.length) { deleting = true; setTimeout(type, 1400); return; }
